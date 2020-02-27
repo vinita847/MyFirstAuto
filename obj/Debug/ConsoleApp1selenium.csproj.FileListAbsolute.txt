@@ -1,0 +1,11 @@
+C:\selenium_try\ConsoleApp1selenium\obj\Debug\ConsoleApp1selenium.csprojAssemblyReference.cache
+C:\selenium_try\ConsoleApp1selenium\bin\Debug\ConsoleApp1selenium.exe.config
+C:\selenium_try\ConsoleApp1selenium\bin\Debug\ConsoleApp1selenium.exe
+C:\selenium_try\ConsoleApp1selenium\bin\Debug\ConsoleApp1selenium.pdb
+C:\selenium_try\ConsoleApp1selenium\bin\Debug\WebDriver.dll
+C:\selenium_try\ConsoleApp1selenium\bin\Debug\WebDriver.Support.dll
+C:\selenium_try\ConsoleApp1selenium\bin\Debug\WebDriver.xml
+C:\selenium_try\ConsoleApp1selenium\bin\Debug\WebDriver.Support.xml
+C:\selenium_try\ConsoleApp1selenium\obj\Debug\ConsoleApp1selenium.csproj.CopyComplete
+C:\selenium_try\ConsoleApp1selenium\obj\Debug\ConsoleApp1selenium.exe
+C:\selenium_try\ConsoleApp1selenium\obj\Debug\ConsoleApp1selenium.pdb
