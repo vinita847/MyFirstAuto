@@ -20,20 +20,14 @@ namespace ConsoleApp1selenium
         static void Main(string[] args)
         { }
     }
+
+
     [TestFixture, Description("Time and Material Test case")]
+    [Parallelizable]
     class TimeandMaterialTestSuit : CommonDriver
     {
-        [SetUp]
-        public void StartUpTest()
-        {
-            //Define driver
-            driver = new ChromeDriver();
-
-            //Create page object for login page and using this object to call the Loginsteps function
-            LoginPage loginObj = new LoginPage();
-            loginObj.LoginSteps(driver);
-        }
-        [Test]
+        
+        [Test, Description("Check if user is able to add new TM Record with valid data")]
         public void AddNewTMTest()
         {
             //Create page object for HOME PAGE
@@ -47,7 +41,7 @@ namespace ConsoleApp1selenium
             tmObj.AddTM(driver);
 
         }
-        [Test]
+        [Test, Description("Check user is able to Edit Existing TM Record with valid data")]
         public void EditTMTest()
         {
             //Create page object for HOME PAGE
@@ -60,7 +54,7 @@ namespace ConsoleApp1selenium
             //Edit TM test cases
             tmObj.EditTM(driver);
         }
-        [Test]
+        [Test, Description("Check user is able to Delete Existing TM Record")]
         public void DeleteTMTest()
         {
             //Create page object for HOME PAGE
@@ -73,38 +67,26 @@ namespace ConsoleApp1selenium
             //Delete TM test case
             tmObj.DeleteTM(driver);
         }
-        [TearDown]
-        public void FinishTestRun()
-        {
-            //close the browser
-            CommonDriver.driver.Close();
-        }
+        
     }
+    
     [TestFixture, Description("Customer Test case")]
+    [Parallelizable]
     class CustomerTestSuit : CommonDriver
     {
-        [SetUp]
-        public void StartUpSteps()
-        {
-            //Define driver
-            driver = new ChromeDriver();
-
-            //Create page object for login page and using this object to call the Loginsteps function
-            LoginPage loginObj = new LoginPage();
-            loginObj.LoginSteps(driver);
-        }
+      
         [Test]
         public void AddNewCustomer()
         {
             //Create page object for HOME PAGE
             HomePage homeObj = new HomePage();
-            homeObj.NavigatetoTM(driver);
+            homeObj.NavigatetoCustomer(driver);
 
             //object for customer page
             CustomerPage custObj = new CustomerPage();
 
             //create new Customer
-            custObj.AddCustomerTest();
+            custObj.AddCustomer(driver);
         }
         [Test]
         public void EditCustomer()
@@ -113,7 +95,7 @@ namespace ConsoleApp1selenium
             CustomerPage custObj = new CustomerPage();
 
             //Edit Customer
-            custObj.EditCustomerTest();
+            custObj.EditCustomer(driver);
         }
 
         [Test]
@@ -123,14 +105,9 @@ namespace ConsoleApp1selenium
             CustomerPage custObj = new CustomerPage();
 
             //Delete Customer
-            custObj.DeleteCustomerTest();
+            custObj.DeleteCustomer(driver);
         }
-        [TearDown]
-        public void FinishTestRun()
-        {
-            //close the driver
-            CommonDriver.driver.Close();
-        }
+        
 
     }
 }

@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using ConsoleApp1selenium.Utilities;
+using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
@@ -18,24 +20,40 @@ namespace ConsoleApp1selenium.Pages
             // maximize the browser
             driver.Manage().Window.Maximize();
 
+            //populate login page test datacollection
+            ExcelLibHelpers.PopulateInCollection("@V:/selenium_try/ConsoleApp1selenium/TestData/Time and Material TestData.xlsx", "LoginPage");
+
             //identify username element and enter the user name
-            driver.FindElement(By.Id("UserName")).SendKeys("hari");
+            driver.FindElement(By.Id("UserName")).SendKeys(ExcelLibHelpers.ReadData(2, "Username"));
 
             //identify the password element and enter password
-            driver.FindElement(By.Id("Password")).SendKeys("123123");
+            driver.FindElement(By.Id("Password")).SendKeys(ExcelLibHelpers.ReadData(2, "Password"));
 
             //identify the login element and click
             driver.FindElement(By.XPath("//*[@id='loginForm']/form/div[3]/input[1]")).Click();
 
             // verify if the home page is displayed as expected
-            if (driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li/a")).Text == "Hello hari!")
+          
+            try
             {
-                Console.WriteLine("Test Passed");
+                //implement assertion
+                Assert.That(driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li/a")).Text, Is.EqualTo("Hello hari!"));
+
             }
-            else
+
+            catch (Exception ex)
             {
-                Console.WriteLine("Test Failed");
+                Console.WriteLine("Login Page not displayed", ex.Message);
             }
+
+            //if (driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li/a")).Text == "Hello hari!")
+            //{
+            //    Console.WriteLine("Test Passed");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Test Failed");
+            //}
         }
     }
 }
