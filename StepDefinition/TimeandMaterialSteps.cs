@@ -29,59 +29,59 @@ namespace ConsoleApp1selenium.StepDefinition
             homeObj.NavigatetoTM(driver);
         }
         
-        [Given(@"I have mac system")]
-        public void GivenIHaveMacSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I have mac system")]
+        //public void GivenIHaveMacSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I navigate to Time and Material page on mac system")]
-        public void GivenINavigateToTimeAndMaterialPageOnMacSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I navigate to Time and Material page on mac system")]
+        //public void GivenINavigateToTimeAndMaterialPageOnMacSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I have UNIX system")]
-        public void GivenIHaveUNIXSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I have UNIX system")]
+        //public void GivenIHaveUNIXSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I navigate to Time and Material page on UNIX system")]
-        public void GivenINavigateToTimeAndMaterialPageOnUNIXSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I navigate to Time and Material page on UNIX system")]
+        //public void GivenINavigateToTimeAndMaterialPageOnUNIXSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I have windows system")]
-        public void GivenIHaveWindowsSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I have windows system")]
+        //public void GivenIHaveWindowsSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I navigate to Time and Material page on windows system")]
-        public void GivenINavigateToTimeAndMaterialPageOnWindowsSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I navigate to Time and Material page on windows system")]
+        //public void GivenINavigateToTimeAndMaterialPageOnWindowsSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I navigate to Time and Material page on Android moblie")]
-        public void GivenINavigateToTimeAndMaterialPageOnAndroidMoblie()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I navigate to Time and Material page on Android moblie")]
+        //public void GivenINavigateToTimeAndMaterialPageOnAndroidMoblie()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I have an Android mobile device")]
-        public void GivenIHaveAnAndroidMobileDevice()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I have an Android mobile device")]
+        //public void GivenIHaveAnAndroidMobileDevice()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Given(@"I navigate to Time and Material page on IOS mobile")]
-        public void GivenINavigateToTimeAndMaterialPageOnIOSMobile()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Given(@"I navigate to Time and Material page on IOS mobile")]
+        //public void GivenINavigateToTimeAndMaterialPageOnIOSMobile()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
         [Then(@"I should be able to add new Time and Material entry with valid data")]
         public void ThenIShouldBeAbleToAddNewTimeAndMaterialEntryWithValidData()
@@ -113,70 +113,70 @@ namespace ConsoleApp1selenium.StepDefinition
             tmObj.DeleteTM(driver);
         }
         
-        [Then(@"I should not be able to add new Time and Material entry with invalid data")]
-        public void ThenIShouldNotBeAbleToAddNewTimeAndMaterialEntryWithInvalidData()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"I should not be able to add new Time and Material entry with invalid data")]
+        //public void ThenIShouldNotBeAbleToAddNewTimeAndMaterialEntryWithInvalidData()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"I should not be able to Edit Time and Material entry with invalid data")]
-        public void ThenIShouldNotBeAbleToEditTimeAndMaterialEntryWithInvalidData()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"I should not be able to Edit Time and Material entry with invalid data")]
+        //public void ThenIShouldNotBeAbleToEditTimeAndMaterialEntryWithInvalidData()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"The layout of the page should be expected for all Add, Edit and Delete functionalities")]
-        public void ThenTheLayoutOfThePageShouldBeExpectedForAllAddEditAndDeleteFunctionalities()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"The layout of the page should be expected for all Add, Edit and Delete functionalities")]
+        //public void ThenTheLayoutOfThePageShouldBeExpectedForAllAddEditAndDeleteFunctionalities()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"I should be able to perform pagination function for pages as expected")]
-        public void ThenIShouldBeAbleToPerformPaginationFunctionForPagesAsExpected()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"I should be able to perform pagination function for pages as expected")]
+        //public void ThenIShouldBeAbleToPerformPaginationFunctionForPagesAsExpected()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"I should be able to click on refresh and perform the action")]
-        public void ThenIShouldBeAbleToClickOnRefreshAndPerformTheAction()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"I should be able to click on refresh and perform the action")]
+        //public void ThenIShouldBeAbleToClickOnRefreshAndPerformTheAction()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"I should be able to perfoem Table headers icon for ascending and descending")]
-        public void ThenIShouldBeAbleToPerfoemTableHeadersIconForAscendingAndDescending()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"I should be able to perfoem Table headers icon for ascending and descending")]
+        //public void ThenIShouldBeAbleToPerfoemTableHeadersIconForAscendingAndDescending()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"Time and Material page should work perfectly on mac system")]
-        public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnMacSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"Time and Material page should work perfectly on mac system")]
+        //public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnMacSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"Time and Material page should work perfectly on UNIX system")]
-        public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnUNIXSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"Time and Material page should work perfectly on UNIX system")]
+        //public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnUNIXSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"Time and Material page should work perfectly on windows system")]
-        public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnWindowsSystem()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"Time and Material page should work perfectly on windows system")]
+        //public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnWindowsSystem()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"Time and Material page should work perfectly on Anroid mobile")]
-        public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnAnroidMobile()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"Time and Material page should work perfectly on Anroid mobile")]
+        //public void ThenTimeAndMaterialPageShouldWorkPerfectlyOnAnroidMobile()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
         
-        [Then(@"The responce of TIme and Material page should be expected")]
-        public void ThenTheResponceOfTImeAndMaterialPageShouldBeExpected()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"The responce of TIme and Material page should be expected")]
+        //public void ThenTheResponceOfTImeAndMaterialPageShouldBeExpected()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
     }
 }

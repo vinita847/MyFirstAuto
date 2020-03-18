@@ -21,7 +21,7 @@ namespace ConsoleApp1selenium.Pages
             driver.Manage().Window.Maximize();
 
             //populate login page test datacollection
-            ExcelLibHelpers.PopulateInCollection("@V:/selenium_try/ConsoleApp1selenium/TestData/Time and Material TestData.xlsx", "LoginPage");
+            ExcelLibHelpers.PopulateInCollection(@"V:\selenium_try\ConsoleApp1selenium\TestData\TestData.xls", "LoginPage");
 
             //identify username element and enter the user name
             driver.FindElement(By.Id("UserName")).SendKeys(ExcelLibHelpers.ReadData(2, "Username"));

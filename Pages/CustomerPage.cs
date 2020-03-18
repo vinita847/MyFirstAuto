@@ -42,10 +42,14 @@ namespace ConsoleApp1selenium.Pages
             driver.FindElement(By.XPath("//*[@id='ContactEditForm']/div[1]/div[4]/div[1]/input]")).Click();
 
             //exit alert 
+            driver.SwitchTo().Alert().Accept();
+            driver.SwitchTo().DefaultContent();
             
             //click on check box
             driver.FindElement(By.XPath("//*[@id='IsSameContact']")).Click();
 
+            //enter GST
+            driver.FindElement(By.XPath("//*[@id='GST']")).SendKeys("100");
             //save contact
             driver.FindElement(By.XPath("//*[@id='ClientEditForm']/div[1]/div[6]/div[1]/input")).Click();
            

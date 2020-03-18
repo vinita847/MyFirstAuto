@@ -23,7 +23,7 @@ namespace ConsoleApp1selenium
 
 
     [TestFixture, Description("Time and Material Test case")]
-    [Parallelizable]
+    //[Parallelizable]
     class TimeandMaterialTestSuit : CommonDriver
     {
         
@@ -71,11 +71,11 @@ namespace ConsoleApp1selenium
     }
     
     [TestFixture, Description("Customer Test case")]
-    [Parallelizable]
+    //[Parallelizable]
     class CustomerTestSuit : CommonDriver
     {
-      
-        [Test]
+        [Test, Description("Check if user is able to add new Customer with valid data")]
+
         public void AddNewCustomer()
         {
             //Create page object for HOME PAGE
@@ -88,7 +88,9 @@ namespace ConsoleApp1selenium
             //create new Customer
             custObj.AddCustomer(driver);
         }
-        [Test]
+
+        [Test, Description("Check if user is able to Edit existing customer with valid data")]
+
         public void EditCustomer()
         {
             //object for customer page
@@ -98,7 +100,7 @@ namespace ConsoleApp1selenium
             custObj.EditCustomer(driver);
         }
 
-        [Test]
+        [Test, Description("Check if user is able to delete existing customer")]
         public void DeleteCustomer()
         {
             //object for customer page

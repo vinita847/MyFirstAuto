@@ -40,19 +40,19 @@ Scenario: Validate UI for Time and Material page
 	Then The layout of the page should be expected for all Add, Edit and Delete functionalities 
 
 @manual @p1
-Scenario: Validate UX for Time and Material
+Scenario: Validate pagination function (UX) for Time and Material
 	Given I have logged in TurnUp Portal
 	And I have selected Time and Material page
 	Then I should be able to perform pagination function for pages as expected
 
 @manual @p2
-Scenario: Validate UX for Time and Material
+Scenario: Validate refresh button (UX) for Time and Material
 	Given I have logged in TurnUp Portal
 	And I have selected Time and Material page
 	Then I should be able to click on refresh and perform the action
 
 @manual @p2
-Scenario: Validate UX for Time and Material
+Scenario: Validate table headers functionalities (UX) for Time and Material
 	Given I have logged in TurnUp Portal
 	And I have selected Time and Material page
 	Then I should be able to perfoem Table headers icon for ascending and descending

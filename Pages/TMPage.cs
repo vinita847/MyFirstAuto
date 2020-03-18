@@ -107,10 +107,13 @@ namespace ConsoleApp1selenium.Pages
         {
             // lines for Delete test cases
             Thread.Sleep(5000);
-            //click on Delete
-            //wait
 
-            driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[10]/td[5]/a[2]")).Click();
+            //total count before detete
+            string countBeforeDelete = driver.FindElement(By.XPath(".//*[@data-role='pager']")).Text.Remove(0, 150);
+            Console.WriteLine(countBeforeDelete);
+            //click on Delete
+            
+            driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[10]/td[5]/a[2]")).Click(); 
 
 
             //wait
@@ -126,6 +129,12 @@ namespace ConsoleApp1selenium.Pages
             driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/span[2]"));
 
             // verify the total no of enteries decreased by 1
+            //total no of entries after deleting
+            string countAfterDelete = driver.FindElement(By.XPath(".//*[@data-role='pager']")).Text.Remove(0, 1);
+
+
+
+
 
         }
 
